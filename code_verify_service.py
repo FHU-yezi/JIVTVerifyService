@@ -82,4 +82,4 @@ def VerifyCode():
 
 if __name__ == "__main__":
     logging.info("程序开始运行")
-    api.run(port=8505)
+    api.run(host="localhost", port=8505)
