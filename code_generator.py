@@ -16,7 +16,7 @@ def GenerateNewCode():
 
 print("激活码生成程序")
 
-answer = input("请选择操作：\n1. 生成一般激活码\n2. 生成特殊类型 1 激活码\n>>>")
+answer = input("请选择操作：\n1. 生成一般激活码\n2. 生成特殊类型 1 激活码\n3. 生成测试用激活码\n>>>")
 
 if answer not in ["1", "2"]:
     exit()
@@ -37,8 +37,9 @@ for code in codes_list:
     code_data = {
         "code": code, 
         "code_type": {
-            "1": 0, 
-            "2": 1
+            "1": 1, 
+            "2": 2, 
+            "3": 0
             }[answer], 
         "used": False, 
     }
