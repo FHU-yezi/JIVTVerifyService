@@ -18,7 +18,7 @@ print("激活码生成程序")
 
 answer = input("请选择操作：\n1. 生成一般激活码\n2. 生成特殊类型 1 激活码\n3. 生成测试用激活码\n>>>")
 
-if answer not in ["1", "2"]:
+if answer not in ["1", "2", "3"]:
     exit()
 
 total_codes_count = int(input("请输入要生成的激活码数量\n>>>"))
